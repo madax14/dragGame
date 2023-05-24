@@ -1,0 +1,38 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.dropZoneContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: solid 2px black;
+    padding: 2px;
+}
+
+.dropZone {
+    background-color: aquamarine;
+    width: 350px;
+    height: 200px;
+}
+
+.dragble {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: solid 2px black;
+    padding: 2px;
+    width: 350px;
+}
+
+img {
+    width: 350px;
+    height: 200px;
+    cursor: pointer;
+}
+
