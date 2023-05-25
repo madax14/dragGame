@@ -35,6 +35,6 @@ body {
 img {
     width: 350px;
     height: 200px;
-    cursor: pointer;
+    cursor: grab;
 }
 

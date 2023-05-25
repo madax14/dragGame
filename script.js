@@ -20,12 +20,13 @@ dropZone.forEach(zone => {
         // console.log(event)
         const draggedId = event.dataTransfer.getData("text/plain")
         const draggedElement = document.getElementById(draggedId);
+        // console.log(draggedElement)
+
         //To append the zone div to the img dragged
         const appended = zone.appendChild(draggedElement);
 
         const draggedClass = draggedElement.classList[1];
         const dropId = zone.id;
-
         if (draggedClass === dropId) {
             console.log("true")
         } else {
