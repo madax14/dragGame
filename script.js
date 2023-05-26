@@ -23,18 +23,17 @@ dropZone.forEach(zone => {
         // console.log(draggedElement)
 
         //To append the zone div to the img dragged
-        const appended = zone.appendChild(draggedElement);
 
         const draggedClass = draggedElement.classList[1];
         const dropId = zone.id;
         if (draggedClass === dropId) {
             console.log("true")
+            zone.appendChild(draggedElement);
         } else {
             console.log("false")
+            alert("Wrong place")
         }
-
         
-        return appended;
     });
 
 
