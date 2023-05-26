@@ -9,16 +9,14 @@ body {
 }
 
 .dropZoneContainer {
-    display: grid;
-    gap: 10px;
+    display: flex;
     border: solid 2px black;
     padding: 2px;
 }
 
 .dropZone {
-    background-color: aquamarine;
-    width: 350px;
-    height: 200px;
+    width: 175px;
+    height: 100px;
 }
 
 .dragble {
@@ -32,8 +30,24 @@ body {
 }
 
 img {
-    width: 350px;
-    height: 200px;
+    width: 175px;
+    height: 100px;
     cursor: grab;
+}
+
+#dropZone1 {
+    background: url(/images/image1x1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: .5;
+}
+
+#dropZone2 {
+    background: url(/images/image2x1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: .5;
 }
 
