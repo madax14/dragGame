@@ -11,24 +11,25 @@ draggbles.forEach(drag => {
 });
 
 dropZone.forEach(zone => {
+    const dropZoneId = zone.id;
+    // console.log(dropZoneId)
     zone.addEventListener("dragover", (event)=>{
-        event.preventDefault();        
+        event.preventDefault(); 
+        // console.log(event)
     });
     zone.addEventListener("drop", (event)=>{
         event.preventDefault();
-        // console.log(zone.id)
-        // console.log(event)
+
         const draggedId = event.dataTransfer.getData("text/plain")
+        //return the element that is in DATA transfer
         const draggedElement = document.getElementById(draggedId);
-        // console.log(draggedElement)
-
-        //To append the zone div to the img dragged
-
+        
+        //To append the zone div to the img dragged if them match.
         const draggedClass = draggedElement.classList[1];
-        const dropId = zone.id;
-        if (draggedClass === dropId) {
+        if (draggedClass === dropZoneId) {
             console.log("true")
             zone.appendChild(draggedElement);
+            zone.style.opacity = "1";
         } else {
             console.log("false")
             alert("Wrong place")

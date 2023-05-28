@@ -16,7 +16,7 @@ body {
 
 .dropZone {
     width: 175px;
-    height: 100px;
+    height: 200px;
 }
 
 .dragble {
@@ -31,7 +31,7 @@ body {
 
 img {
     width: 175px;
-    height: 100px;
+    height: auto;
     cursor: grab;
 }
 
