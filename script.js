@@ -10,6 +10,7 @@ draggbles.forEach(drag => {
     });
 });
 
+
 dropZone.forEach(zone => {
     const dropZoneId = zone.id;
     // console.log(dropZoneId)
@@ -17,8 +18,20 @@ dropZone.forEach(zone => {
         event.preventDefault(); 
         // console.log(event)
     });
+
+    zone.addEventListener("dragenter", (event)=>{
+        event.preventDefault(); 
+        event.target.classList.add("moveOn");
+    });
+
+    zone.addEventListener("dragleave", (event)=>{
+        event.preventDefault(); 
+        event.target.classList.remove("moveOn");
+    });
+
     zone.addEventListener("drop", (event)=>{
         event.preventDefault();
+        event.target.classList.remove("moveOn");
 
         const draggedId = event.dataTransfer.getData("text/plain")
         //return the element that is in DATA transfer
@@ -30,6 +43,7 @@ dropZone.forEach(zone => {
             console.log("true")
             zone.appendChild(draggedElement);
             zone.style.opacity = "1";
+            
         } else {
             console.log("false")
             alert("Wrong place")
