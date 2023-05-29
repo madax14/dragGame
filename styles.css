@@ -10,13 +10,30 @@ body {
 
 .dropZoneContainer {
     display: flex;
+    align-items: center;
     border: solid 2px black;
     padding: 2px;
 }
 
 .dropZone {
-    width: 175px;
+    width: 250px;
     height: 200px;
+}
+
+#dropZone1 {
+    background: url(/images/Beetle-L.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+#dropZone2 {
+    background: url(/images/Beetle-R.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: .5;
 }
 
 .yellowBorder {
@@ -33,6 +50,8 @@ body {
 .dragble {
     display: flex;
     flex-direction: column;
+    align-content: center;
+    align-items: center;
     gap: 10px;
     border: solid 2px black;
     padding: 2px;
@@ -41,24 +60,10 @@ body {
 }
 
 img {
-    width: 175px;
-    height: auto;
+    width: 250px;
+    height: 200px;
     cursor: grab;
 }
 
-#dropZone1 {
-    background: url(/images/image1x1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity: .5;
-}
 
-#dropZone2 {
-    background: url(/images/image2x1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity: .5;
-}
 
