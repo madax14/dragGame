@@ -1,5 +1,7 @@
 const draggbles = document.querySelectorAll(".dragMe");
 const dropZone = document.querySelectorAll(".dropZone");
+const dropSound = document.getElementById("dropSound");
+const dropWrong = document.getElementById("dropWrong");
 // console.log(draggbles)
 // console.log(dropZone)
 
@@ -37,15 +39,18 @@ dropZone.forEach(zone => {
         //return the element that is in DATA transfer, which is the img
         const draggedElement = document.getElementById(draggedId);
         
-        //To append the zone div to the img dragged if them match.
+    
         const draggedClass = draggedElement.classList[1];
         if (draggedClass === dropZoneId) {
             console.log("true")
+            //To append the img to zoneDrop if they match.
             zone.appendChild(draggedElement);
             zone.style.opacity = "1";
+            dropSound.play();
             
         } else {
             console.log("false")
+            dropWrong.play();
             // alert("Wrong place")
             // zone.style.border = "red"
         }

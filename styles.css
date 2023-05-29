@@ -21,7 +21,7 @@ body {
 }
 
 #dropZone1 {
-    background: url(/images/Beetle-L.png);
+    background: url(/public/images/Beetle-L.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -29,7 +29,7 @@ body {
 }
 
 #dropZone2 {
-    background: url(/images/Beetle-R.png);
+    background: url(/public/images/Beetle-R.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
