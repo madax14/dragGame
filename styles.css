@@ -19,9 +19,15 @@ body {
     height: 200px;
 }
 
-.moveOn {
+.yellowBorder {
     border: solid 1px yellow;
     box-shadow: 1px 1px 3px #202020;
+    transform: scale(1.05);
+}
+
+.redBorder {
+    border: solid 1px rgb(252, 40, 40);
+    box-shadow: 1px 1px 3px #f1454e;
 }
 
 .dragble {

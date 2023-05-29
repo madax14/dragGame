@@ -21,20 +21,20 @@ dropZone.forEach(zone => {
 
     zone.addEventListener("dragenter", (event)=>{
         event.preventDefault(); 
-        event.target.classList.add("moveOn");
+        event.target.classList.add("yellowBorder");
     });
 
     zone.addEventListener("dragleave", (event)=>{
         event.preventDefault(); 
-        event.target.classList.remove("moveOn");
+        event.target.classList.remove("yellowBorder");
     });
 
     zone.addEventListener("drop", (event)=>{
         event.preventDefault();
-        event.target.classList.remove("moveOn");
+        event.target.classList.remove("yellowBorder");
 
         const draggedId = event.dataTransfer.getData("text/plain")
-        //return the element that is in DATA transfer
+        //return the element that is in DATA transfer, which is the img
         const draggedElement = document.getElementById(draggedId);
         
         //To append the zone div to the img dragged if them match.
@@ -46,7 +46,8 @@ dropZone.forEach(zone => {
             
         } else {
             console.log("false")
-            alert("Wrong place")
+            // alert("Wrong place")
+            // zone.style.border = "red"
         }
         
     });
