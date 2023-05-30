@@ -8,7 +8,6 @@ var draggedCount = 0; //to count how many img has been dragged to drogZone
 draggbles.forEach(drag => {
     drag.addEventListener("dragstart", (event) =>{
         event.dataTransfer.setData("text/plain", event.target.id)
-        // console.log(drag.id)
     });
 });
 
@@ -54,6 +53,7 @@ dropZone.forEach(zone => {
                 btn.style.display = "block"
                 var carEngine = new Audio("/public/sounds/CarEngine.mp3");
                 carEngine.play();
+                // zone.target.classList.add("moveOut");
              }   
          // if place the img in wrong spot, play saund "wrong"
         } else {

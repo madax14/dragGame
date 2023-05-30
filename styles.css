@@ -60,6 +60,11 @@ body {
     height: 410px;
 }
 
+.moveOut {
+    transition: transform 2s ease-in-out 2s;
+    transform: translateX(130%);
+}
+
 img {
     width: 250px;
     height: 200px;
