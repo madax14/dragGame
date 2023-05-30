@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/68927d0f53.js" crossorigin="anonymous"></script>
+    <title>Drag</title>
 </head>
 <body>
     
 
-    <div class="container">
+    <div class="container level-01">
         <div class="dropZoneContainer">
             <div id="dropZone1" class="dropZone"></div>
             <div id="dropZone2" class="dropZone"></div>
-
+            <button class="btn" ><i class="fa-solid fa-arrows-rotate"></i></button>
         </div>
         <div id="dragble" class="dragble">
             <img id="dragMe1" class="dragMe dropZone1" draggable="true" src="/public/images/Beetle-L.png" alt="Splash">
@@ -22,8 +23,6 @@
         </div>
         <audio id="dropSound" src="/public/sounds/carDoorClose.mp3"></audio>
         <audio id="dropWrong" src="/public/sounds/wrong.mp3"></audio>
-
-
     </div>
 
 

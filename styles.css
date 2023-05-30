@@ -9,6 +9,7 @@ body {
 }
 
 .dropZoneContainer {
+    position: relative;
     display: flex;
     align-items: center;
     border: solid 2px black;
@@ -63,6 +64,29 @@ img {
     width: 250px;
     height: 200px;
     cursor: grab;
+}
+
+.btn {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background-color: #202020;
+    cursor: pointer;
+}
+
+.fa-arrows-rotate {
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: solid 1px #000;
 }
 
 
