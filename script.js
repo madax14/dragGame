@@ -3,7 +3,7 @@ const dropZone = document.querySelectorAll(".dropZone");
 const dropSound = document.getElementById("dropSound");
 const dropWrong = document.getElementById("dropWrong");
 const btn = document.querySelector(".btn");
-var draggedCount = 0; //to count how many img has been dragged to drogZone
+var draggedCount = 0; //to count how many img has been dragged to dragZone
 
 draggbles.forEach(drag => {
     drag.addEventListener("dragstart", (event) =>{
@@ -50,12 +50,13 @@ dropZone.forEach(zone => {
             // When the user drag all images. Show btn replay & play engine sound
             if (draggedCount === draggbles.length) {
                 console.log("You Won!")
-                btn.style.display = "block"
+                btn.style.transform = "translatex(0px)";
                 var carEngine = new Audio("/public/sounds/CarEngine.mp3");
                 carEngine.play();
                 // zone.target.classList.add("moveOut");
+                draggbles.style.transform = "translatex(150px)";
              }   
-         // if place the img in wrong spot, play sound "wrong"
+         // if place the img is placed in wrong spot, play sound "wrong"
         } else {
             console.log("false")
             dropWrong.play();
