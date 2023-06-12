@@ -37,6 +37,7 @@ body {
     opacity: .5;
 }
 
+/* When you drag Over, border become yello.w */
 .yellowBorder {
     border: solid 1px yellow;
     box-shadow: 1px 1px 3px #202020;
@@ -48,6 +49,7 @@ body {
     box-shadow: 1px 1px 3px #f1454e;
 }
 
+/* Right side img that user drag */
 .dragble {
     display: flex;
     flex-direction: column;

@@ -55,7 +55,7 @@ dropZone.forEach(zone => {
                 carEngine.play();
                 // zone.target.classList.add("moveOut");
              }   
-         // if place the img in wrong spot, play saund "wrong"
+         // if place the img in wrong spot, play sound "wrong"
         } else {
             console.log("false")
             dropWrong.play();
